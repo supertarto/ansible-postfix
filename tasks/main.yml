@@ -1,2 +1,27 @@
 ---
+- name: Define postfix hostname
+  debconf:
+    name: postfix
+    question: "postfix/mailname"
+    value: "{{ postfix_hostname }}"
+    vtype: "string"
 
+- name: Define postfix main_mailer_type
+  debconf:
+    name: postfix
+    question: "postfix/main_mailer_type"
+    value: "{{ postfix_main_mailer_type }}"
+    vtype: "string"
+
+- name: Define Postfix Relayhost
+  debconf:
+    name: postfix
+    question: "postfix/relayhost"
+    value: "{{ postfix_smtp }}"
+    vtype: "string"
+  when: postfix_smtp is defined
+
+- name: Install Postfix package
+  package:
+    name: postfix
+    state: present

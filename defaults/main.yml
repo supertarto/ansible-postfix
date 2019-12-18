@@ -1,2 +1,4 @@
 ---
-
+postfix_hostname: "{{ ansible_fqdn }}"
+postfix_main_mailer_type: "smarthost"
+postfix_smtp: mysmtp
