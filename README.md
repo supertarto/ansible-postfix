@@ -6,7 +6,6 @@ Install and configure Postfix with Ansible. This role is tested only with Debian
 None
 
 ## Tested plateform
-* Debian 9 (Stretch)
 * Debian 10 (Buster)
 
 ## Role variables
