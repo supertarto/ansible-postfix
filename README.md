@@ -26,6 +26,7 @@ postfix_smtp: mysmtp
     postfix_smtp: mysmtp@smtp.com
 
 ```
+
 ## Installation
 ```
 ansible-galaxy install supertarto.postfix
