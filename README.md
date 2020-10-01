@@ -1,5 +1,5 @@
 # Ansible Postfix
-[![Build Status](https://travis-ci.org/supertarto/ansible-postfix.svg?branch=master)](https://travis-ci.org/supertarto/ansible-postfix)
+[![Build Status](https://travis-ci.com/supertarto/ansible-postfix.svg?branch=master)](https://travis-ci.com/supertarto/ansible-postfix)
 Install and configure Postfix with Ansible. This role is tested only with Debian, and is very simplistic.
 
 ## Requirements
