@@ -1,8 +1,6 @@
 ---
 - name: Converge
   hosts: all
-  roles:
-    - role: supertarto.postfix
 
   pre_tasks:
     - name: Update apt cache.
@@ -11,3 +9,6 @@
         cache_valid_time: 600
       when: ansible_os_family == 'Debian'
       changed_when: false
+
+  roles:
+    - role: supertarto.postfix
